@@ -1,4 +1,4 @@
 <div class='cities-directive directive'>
     <span>{{cities.name}}:</span>
-    <select class='form-control' ng-model='cities.model.city_id' ng-options='item.id as item.name for item in cities.collection'></select>
+    <select class='form-control' ng-model='cities.model.id' ng-options='item.id as item.name for item in cities.collection' ng-change="cities.change()"></select>
 </div>

@@ -3,7 +3,9 @@ require './detailStyles.scss'
 module.exports = class
   @$inject = ["$scope"]
   constructor: (@$scope) ->
-    @scope = @$scope;
+    @scope = @$scope
+    @$scope.$on 'change',(event, data)=>
+      console.log data
     @weather = {
       "coord": {"lon": 145.77, "lat": -16.92},
       "weather": [{"id": 802, "main": "Clouds", "description": "scattered clouds", "icon": "03n"}],
