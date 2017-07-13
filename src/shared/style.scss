@@ -1,0 +1,27 @@
+.f-box{
+  display: flex;
+}
+
+.under_text{
+  font-size: 12px;
+}
+
+.font_italic{
+  font-style: italic;
+}
+
+.directive.shrink{
+  flex-direction: row;
+}
+
+.icon{
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icon.disable{
+  cursor: default;
+  color: lightgray;
+  pointer-events: none;
+}

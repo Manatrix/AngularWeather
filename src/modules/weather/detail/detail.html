@@ -1,0 +1,19 @@
+<navbar></navbar>
+<div class="content">
+    <div class="weather">
+        <div class="temp">{{dt.weather.main.temp}}&deg;F</div>
+        <div class="state">{{dt.weather.weather[0].main}}</div>
+        <div class="wind">{{dt.weather.wind.speed}} m/s</div>
+        <div class="icon">
+
+        </div>
+    </div>
+    <div class="weather">
+        <div class="temp">{{dt.wunderground.current_observation.temp_c}}&deg;C</div>
+        <div class="state">{{dt.wunderground.current_observation.weather}}</div>
+        <div class="wind">{{dt.wunderground.current_observation.wind_kph}} km/h</div>
+        <div class="icon">
+
+        </div>
+    </div>
+</div>
