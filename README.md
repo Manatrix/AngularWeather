@@ -1,7 +1,3 @@
-# Frontend
-
-### Development
-
 #### 1) Install global tools
 
 `$ sudo npm i -g yarn`
@@ -14,4 +10,4 @@
 
 `$ yarn dev`
 
-#### 4) Goto http://localhost:8080/
+#### 4) Open http://localhost:8080/

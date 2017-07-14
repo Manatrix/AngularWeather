@@ -1,26 +1,26 @@
-.f-box{
+.f-box {
   display: flex;
 }
 
-.under_text{
+.under_text {
   font-size: 12px;
 }
 
-.font_italic{
+.font_italic {
   font-style: italic;
 }
 
-.directive.shrink{
+.directive.shrink {
   flex-direction: row;
 }
 
-.icon{
+.icon {
   cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.icon.disable{
+.icon.disable {
   cursor: default;
   color: lightgray;
   pointer-events: none;

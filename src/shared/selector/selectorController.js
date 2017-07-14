@@ -1,5 +1,5 @@
 export default class SelectorController {
-	constructor($scope) {
-	}
+    constructor($scope) {
+    }
 }
 SelectorController.$inject = ["$scope"];
