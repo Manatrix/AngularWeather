@@ -186,7 +186,7 @@ export default class citiesDirective {
     }
 
     change() {
-        this.scope.$emit('change', this.model.id);
+        this.scope.$emit('change', this.model);
     }
 }
 citiesDirective.$inject = ["$scope"];

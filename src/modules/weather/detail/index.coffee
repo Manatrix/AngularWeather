@@ -4,22 +4,14 @@ module.exports = class
   @$inject = ["$scope"]
   constructor: (@$scope) ->
     @scope = @$scope
-    @$scope.$on 'change',(event, data)=>
-      console.log data
-    @weather = {
-      "coord": {"lon": 145.77, "lat": -16.92},
-      "weather": [{"id": 802, "main": "Clouds", "description": "scattered clouds", "icon": "03n"}],
-      "base": "stations",
-      "main": {"temp": 300.15, "pressure": 1007, "humidity": 74, "temp_min": 300.15, "temp_max": 300.15},
-      "visibility": 10000,
-      "wind": {"speed": 3.6, "deg": 160},
-      "clouds": {"all": 40},
-      "dt": 1485790200,
-      "sys": {"type": 1, "id": 8166, "message": 0.2064, "country": "AU", "sunrise": 1485720272, "sunset": 1485766550},
-      "id": 2172797,
-      "name": "Cairns",
-      "cod": 200
-    }
+    @$scope.$on 'change', (event, data)=>
+#      xhr0 = new XMLHttpRequest()
+#      xhr0.open('GET', "http://api.wunderground.com/api/a458d7cff033ed43/conditions/q/"+data.country+"/"+data.name, false)
+#      xhr0.send()
+      xhr = new XMLHttpRequest()
+      xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?appid=49e65d0773eb41a5fc1eb12d52e0f2fc&id=' + data.id, false)
+      xhr.send()
+      @weather = JSON.parse xhr.responseText
 
     @wunderground = {
       "response": {
