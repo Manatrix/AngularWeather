@@ -8,13 +8,13 @@ runner = require './runner'
 
 weather = require './modules/weather'
 
-navbar = require './shared/navbar'
+selector = require './shared/selector'
 cities = require './shared/cities'
 
 angular
 .module 'main', [weather]
 .config config.default
 .run runner.default
-.directive 'navbar', navbar.default
+.directive 'selector', selector.default
 .directive 'cities', cities.default
 

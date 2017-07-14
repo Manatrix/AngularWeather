@@ -10,3 +10,30 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+.temp {
+  font-size: 10rem;
+}
+
+.state {
+  font-size: 5rem;
+}
+
+.wind {
+  font-size: 3rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  text-align: center;
+  font-size: 10rem;
+}
+
+.source {
+  font-size: 3rem;
+}

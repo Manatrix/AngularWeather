@@ -8,8 +8,8 @@ export default function () {
         controller: Controller,
         controllerAs: 'cities',
         scope: {
-            model: '=',
-            name: '@'
+            model: '='
+            // name: '@'
         }
     };
 }
